@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .container {
+            left: 25%;
+            padding: 100px;
+            text-align: center;
+            border: 1px solid green;
+
+        }
+
+        input,
+        select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 5%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Simple Calculator</h1><div id="null"></div>
+
+            <br>
+            <!-- onsubmit="submitform(event)" -->
+            First Number:<input id="num1" name="num1" value="">
+            <br>
+            Second Number:<input id="num2" name="num2" value="">
+            <br>
+            <input id="op" type="submit" name="sub" value="+">
+            <input id="op" type="submit" name="sub" value="-">
+            <input id="op" type="submit" name="sub" value="*">
+            <input id="op" type="submit" name="sub" value="/">
+            <br>
+            <br>Result: <input id="result" type='text' value=""><br>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- <script src="index.js"></script> -->
+    
+
+</body>
+
+</html>

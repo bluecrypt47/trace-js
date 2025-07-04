@@ -1,0 +1,24 @@
+version: '3'
+services:
+  proxy:
+    build:
+      context: ./nodejs
+    ports:
+      - 80:80
+    # networks:
+    #   - techlab
+    volumes:
+      - ./nodejs/app:/app
+
+  typejuggling_level_1:
+    build: ./php
+    restart: unless-stopped
+    # ports:
+    #   - "127.0.0.1:80"
+    volumes:
+      - ./php/app:/var/www/html/
+    environment:
+      - FLAG=HPT{Still_pHP_tYPe_JUgGliNg}
+
+networks:
+  techlab:
